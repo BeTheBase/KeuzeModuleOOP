@@ -8,8 +8,6 @@
 #include "HalveEuro.h";
 #include "KoffieMunt.h";
 
-#define FILE "D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp";
-
 int main()
 {
 	KoffieApparaat myKoffieApparaat;
