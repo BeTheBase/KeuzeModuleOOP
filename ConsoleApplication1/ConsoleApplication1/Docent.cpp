@@ -2,17 +2,8 @@
 
 Docent::Docent() {}
 
-Docent::Docent(string name, int age, int workHours) { this->name = name; this->age = age; this->workHours = workHours; }
-
-string Docent::getName()
-{
-	return name;
-}
-
-int Docent::getAge()
-{
-	return age;
-}
+//.Docent::Docent(string name, int age, int workHours) { this->name = name; this->age = age; this->workHours = workHours; }
+Docent::Docent(string name, int age, int workHours) : Mens(name, age), workHours(workHours) {}
 
 int Docent::getWorkHours()
 {

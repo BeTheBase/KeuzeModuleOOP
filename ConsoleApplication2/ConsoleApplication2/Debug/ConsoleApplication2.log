@@ -1,0 +1,22 @@
+﻿  ConsoleApplication2.cpp
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\KoffieApparaat.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\HalveEuro.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\KoffieApparaat.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\Euro.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\KoffieApparaat.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\KoffieMunt.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\KoffieApparaat.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(7): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(8): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  KoffieApparaat.cpp
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\KoffieApparaat.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\HalveEuro.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\KoffieApparaat.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\Euro.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\KoffieApparaat.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\KoffieMunt.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\ConsoleApplication2\KoffieApparaat.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  ConsoleApplication2.vcxproj -> D:\School\Jaar2\KernModuleOOP\ConsoleApplication2\Debug\ConsoleApplication2.exe

@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AsaultRifle.cpp" />
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
     <ClCompile Include="Docent.cpp" />
@@ -158,16 +159,21 @@
     <ClCompile Include="Module.cpp" />
     <ClCompile Include="ShapeBase.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="SubMachineGun.cpp" />
     <ClCompile Include="Weapon.cpp" />
+    <ClCompile Include="WeaponDetector.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AsaultRifle.h" />
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Docent.h" />
     <ClInclude Include="Mens.h" />
     <ClInclude Include="Module.h" />
     <ClInclude Include="ShapeBase.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="SubMachineGun.h" />
     <ClInclude Include="Weapon.h" />
+    <ClInclude Include="WeaponDetector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

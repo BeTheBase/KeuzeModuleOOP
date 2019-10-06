@@ -6,6 +6,7 @@
 #include "Docent.h"
 #include "Student.h"
 #include "Module.h"
+#include "WeaponDetector.h";
 using namespace std;
 
 int main()
@@ -55,6 +56,22 @@ int main()
 		cout << "Er zitten: " << modules[i]->getAllStudents().capacity() << " studenten in deze module" << endl;
 		cout << "Voor deze module krijg je: " << modules[i]->getEc() << " studiepunten." << endl;
 		cout << modules[i]->getDocent()->getName() << " werkt " << modules[i]->getDocent()->getWorkHours() << " uren per week" << endl << endl;
+	}
+
+	WeaponDetector detector;
+	SubMachineGun subGun;
+	AsaultRifle aR;
+	Weapon w;
+	detector.detectWeapon(subGun);
+	detector.detectWeapon(aR);
+	detector.detectWeapon(w);
+
+	for (int i = 0; i < 5; i++)
+	{
+		for (int k = 0; k < 5; k++)
+		{
+			cout << ".";
+		}
 	}
 }
 
