@@ -1,0 +1,9 @@
+{"Bas" : { 
+      "name": "Bas",
+      "age": 20,
+      "points": 60}
+ "Ben" : {
+      "name": "Ben",
+      "age" : 26,
+      "points": 52}
+}

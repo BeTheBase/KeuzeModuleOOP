@@ -1,16 +1,45 @@
 // ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include <fstream>
 #include <iostream>
 #include "Weapon.h"
 #include "Docent.h"
 #include "Student.h"
 #include "Module.h"
-#include "WeaponDetector.h";
+#include "WeaponDetector.h"
+#include "frozen.h"
 using namespace std;
+
+#define FILE "D:\\School\\Jaar2\\KernModuleOOP\\ConsoleApplication1\\StudentText.json"
+
+struct StudentData
+{
+	string name;
+	int age;
+	int points;
+	friend std::ifstream& operator>>(std::ifstream& input, StudentData& address);
+};
+
+std::ifstream& operator>>(std::ifstream& input, StudentData& address)
+{
+	input >> address.name;
+	input >> address.age;
+	input >> address.points;
+	return input;
+}
 
 int main()
 {
+	//struct json_out out2 = JSON_OUT_FILE(FILE);
+	char* content = json_fread(FILE);
+	json_fprintf(FILE, content);
+	std::ifstream input_file(FILE, std::ifstream::binary);
+	if (!input_file) {
+		std::cout << "Probleem bij openen file" << std::endl;
+		exit(1);
+	}
+
 	Docent* docent0 = new Docent("Edwin", 37, 10);
 	Docent* docent1 = new Docent("Dimme", 23, 15);
 	Docent* docent2 = new Docent("Valentijn", 40, 30);
@@ -25,8 +54,26 @@ int main()
 	Student* student7 = new Student("Henk", 36, 40);
 	Student* student8 = new Student("Pietje", 18, 35);
 	Student* student9 = new Student("Walter", 28, 20);
+	
+	vector<Student*> students;/*
+	vector<StudentData> studentData;
+	//StudentData record;
+	string jsonString;
+	//input_file >> jsonString;
+	//cout << jsonString;
+	//...
+	
+	while (input_file >> record)
+	{
+		studentData.push_back(record);
+	}*/
+	/*
+	for (int i = 0; i < 10; i++) {
+		Student* student = new Student(studentData[i].name, studentData[i].age, studentData[i].points);
+		students.push_back(student);
+	}*/
 
-	vector<Student*> students;
+
 	
 	students.push_back(student0);
 	students.push_back(student1);
@@ -66,13 +113,18 @@ int main()
 	detector.detectWeapon(aR);
 	detector.detectWeapon(w);
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < students.capacity; i++)
 	{
-		for (int k = 0; k < 5; k++)
-		{
-			cout << ".";
-		}
+		delete students[i];
 	}
+
+	for (int i = 0; i < modules.capacity; i++)
+	{
+		delete modules[i];
+	}
+
+
+	return(0);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
