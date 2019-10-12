@@ -1,33 +1,31 @@
 // ConsoleApplication5.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-#include "Broodmandje.h"
+#include "Bibliotheek.h"
 #include <iostream>
 using namespace std;
 
-void geefMandjeDoor(Broodmandje* mandje)
-{
-	cout << "Mandje gekregen" << endl;
-	mandje->show();
-
-	mandje->add("Keizerbroodje");
-	mandje->show();
-}
-
 int main()
 {
-	cout << "Mandje 1" << std::endl;
-	Broodmandje* mandje = new Broodmandje();
-	mandje->show();
-	mandje->add("Chrosant");
-	mandje->show();
+	std::cout << "--Bieb 1" << std::endl;
+	Bibliotheek bieb1 = Bibliotheek();
+	bieb1.show();
 
-	cout << "Mandje 2" << endl;
-	Broodmandje mandje2;
-	mandje2 = mandje;
-	mandje2.show();
-	mandje->add("CocoBroodje");
-	mandje2.show();
-	delete mandje;
+	bieb1.add("The Last Wish");
+	std::cout << "--Bieb 1" << std::endl;
+	bieb1.show();
+
+	Bibliotheek bieb2;
+	bieb2 = bieb1; 
+	std::cout << "--Bieb 2" << std::endl;
+	bieb2.show();
+
+	bieb1.add("Lady of the lake");
+	std::cout << "--Bieb 1" << std::endl;
+	bieb1.show();
+
+	std::cout << "--Bieb 2" << std::endl;
+	bieb2.show();
+
 	return(0);
 }
 

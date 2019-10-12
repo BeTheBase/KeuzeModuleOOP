@@ -18,18 +18,18 @@
     <ClCompile Include="ConsoleApplication5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Broodje.cpp">
+    <ClCompile Include="Bibliotheek.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Broodmandje.cpp">
+    <ClCompile Include="Boek.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Broodje.h">
+    <ClInclude Include="Bibliotheek.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Broodmandje.h">
+    <ClInclude Include="Boek.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

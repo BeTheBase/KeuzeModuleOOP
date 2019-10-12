@@ -151,13 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Broodje.cpp" />
-    <ClCompile Include="Broodmandje.cpp" />
+    <ClCompile Include="Boek.cpp" />
+    <ClCompile Include="Bibliotheek.cpp" />
     <ClCompile Include="ConsoleApplication5.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Broodje.h" />
-    <ClInclude Include="Broodmandje.h" />
+    <ClInclude Include="Boek.h" />
+    <ClInclude Include="Bibliotheek.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

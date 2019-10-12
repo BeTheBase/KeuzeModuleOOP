@@ -32,13 +32,14 @@ std::ifstream& operator>>(std::ifstream& input, StudentData& address)
 int main()
 {
 	//struct json_out out2 = JSON_OUT_FILE(FILE);
+	/*
 	char* content = json_fread(FILE);
 	json_fprintf(FILE, content);
 	std::ifstream input_file(FILE, std::ifstream::binary);
 	if (!input_file) {
 		std::cout << "Probleem bij openen file" << std::endl;
 		exit(1);
-	}
+	}*/
 
 	Docent* docent0 = new Docent("Edwin", 37, 10);
 	Docent* docent1 = new Docent("Dimme", 23, 15);
@@ -55,7 +56,8 @@ int main()
 	Student* student8 = new Student("Pietje", 18, 35);
 	Student* student9 = new Student("Walter", 28, 20);
 	
-	vector<Student*> students;/*
+	vector<Student*> students;
+	/*
 	vector<StudentData> studentData;
 	//StudentData record;
 	string jsonString;
@@ -113,6 +115,8 @@ int main()
 	detector.detectWeapon(aR);
 	detector.detectWeapon(w);
 
+	
+	/*
 	for (int i = 0; i < students.capacity; i++)
 	{
 		delete students[i];
@@ -121,7 +125,7 @@ int main()
 	for (int i = 0; i < modules.capacity; i++)
 	{
 		delete modules[i];
-	}
+	}*/
 
 
 	return(0);
