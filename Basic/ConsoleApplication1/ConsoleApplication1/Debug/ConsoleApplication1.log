@@ -1,0 +1,29 @@
+﻿  ConsoleApplication1.cpp
+D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\WeaponDetector.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\WeaponDetector.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\AsaultRifle.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\WeaponDetector.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\SubMachineGun.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(101): warning C4018: '<': signed/unsigned mismatch
+D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(120): error C3867: 'std::vector<Student *,std::allocator<_Ty>>::capacity': non-standard syntax; use '&' to create a pointer to member
+          with
+          [
+              _Ty=Student *
+          ]
+D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(120): error C2446: '<': no conversion from 'unsigned int (__thiscall std::vector<Student *,std::allocator<_Ty>>::* )(void) noexcept const' to 'int'
+          with
+          [
+              _Ty=Student *
+          ]
+  D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(120): note: There is no context in which this conversion is possible
+D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(125): error C3867: 'std::vector<Module *,std::allocator<_Ty>>::capacity': non-standard syntax; use '&' to create a pointer to member
+          with
+          [
+              _Ty=Module *
+          ]
+D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(125): error C2446: '<': no conversion from 'unsigned int (__thiscall std::vector<Module *,std::allocator<_Ty>>::* )(void) noexcept const' to 'int'
+          with
+          [
+              _Ty=Module *
+          ]
+  D:\School\Jaar2\KernModuleOOP\Basic\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(125): note: There is no context in which this conversion is possible

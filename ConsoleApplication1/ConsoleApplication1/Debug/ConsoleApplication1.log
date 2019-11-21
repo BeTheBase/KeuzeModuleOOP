@@ -1,8 +1,0 @@
-﻿  ConsoleApplication1.cpp
-D:\School\Jaar2\KernModuleOOP\ConsoleApplication1\ConsoleApplication1\WeaponDetector.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\School\Jaar2\KernModuleOOP\ConsoleApplication1\ConsoleApplication1\WeaponDetector.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\School\Jaar2\KernModuleOOP\ConsoleApplication1\ConsoleApplication1\AsaultRifle.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\School\Jaar2\KernModuleOOP\ConsoleApplication1\ConsoleApplication1\WeaponDetector.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\School\Jaar2\KernModuleOOP\ConsoleApplication1\ConsoleApplication1\SubMachineGun.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\School\Jaar2\KernModuleOOP\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(101): warning C4018: '<': signed/unsigned mismatch
-  ConsoleApplication1.vcxproj -> D:\School\Jaar2\KernModuleOOP\ConsoleApplication1\Debug\ConsoleApplication1.exe
