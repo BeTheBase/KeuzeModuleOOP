@@ -1,10 +1,68 @@
 #include <thread>
 #include <iostream>
-#include "Task.h";
+#include "Task.h"
 #include <mutex>
 #include <vector>
 #include <future>
+#include "ConcurrentVector.h"
+#include <string>
 
+std::mutex m;
+
+template <class T>
+class VectorContainer {
+	std::vector<T> myVector;
+public:
+	VectorContainer() {	myVector = std::vector<T>();  }
+
+	void drawVector() { 
+		std::string items;
+		for (T element : myVector)
+		{
+
+			std::cout << "Item: "<< std::to_string(element) << std::endl;
+		}
+	}
+	void addItem(T item) { 
+		{
+			//std::lock_guard<std::mutex> guard(m);
+			m.lock();
+			myVector.push_back(item); 
+			m.unlock();
+		}
+	}
+	void removeItem(T item) { 	
+		if (std::find(myVector.begin(), myVector.end(), item) != myVector.end())
+		{
+			//std::lock_guard<std::mutex> guard(m);
+			m.lock();
+			typename std::vector<T>::iterator it = myVector.begin();
+			myVector.erase(std::remove(myVector.begin(), myVector.end(), item), myVector.end());
+			m.unlock();
+		}
+	}
+};
+
+int main() {
+	
+	VectorContainer<int> myint = VectorContainer<int>();
+	
+	std::thread myFirstThread([&]() { myint.addItem(3); });
+	std::thread mySecondThread([&]() { myint.removeItem(3); });
+	std::thread myThridThread([&]() { myint.addItem(10); });
+
+	myFirstThread.join();
+	mySecondThread.join();
+	myThridThread.join();
+
+	myint.drawVector();
+
+	return 0;
+}
+
+
+
+/*
 template<typename P>
 void uploadWithProgress(int* data, int size, P function)
 {
@@ -17,7 +75,6 @@ void progress(int current, int total)
 }
 
 int accum = 0;
-std::mutex m;
 
 void square(std::promise<int>* promise, int x)
 {
@@ -29,7 +86,7 @@ void square(std::promise<int>* promise, int x)
 	{
 		std::lock_guard<std::mutex> guard(m);
 		accum += tmp;
-	}*/
+	}
 
 }
 
@@ -49,7 +106,7 @@ void calculate()
 	}
 
 	std::cout << "accum=" << accum << std::endl;
-}*/
+}
 
 int value = 100;
 bool notified = false;
@@ -61,7 +118,7 @@ void reportValue()
 	while (!notified)
 	{
 		std::cout << "Waiting" << std::endl;
-	}*/
+	}
 	std::unique_lock<std::mutex> lock3(m);
 	while (!notified)
 	{
@@ -139,7 +196,6 @@ int main()
 	std::thread t(square, &promise, 15);
 	t.detach();
 	std::cout << "result = " << future.get() << std::endl;
-	*/
+	
 	return 0;
-}
-
+}*/

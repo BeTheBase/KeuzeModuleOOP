@@ -2,4 +2,7 @@
 D:\School\Jaar2\KernModuleOOP\Advanced\Les1Opdracht2(GameOfLife)\Les1Opdracht2(GameOfLife)\Grid.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\School\Jaar2\KernModuleOOP\Advanced\Les1Opdracht2(GameOfLife)\Les1Opdracht2(GameOfLife)\Cell.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 D:\School\Jaar2\KernModuleOOP\Advanced\Les1Opdracht2(GameOfLife)\Les1Opdracht2(GameOfLife)\Grid.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\Advanced\Les1Opdracht2(GameOfLife)\Les1Opdracht2(GameOfLife)\Grid.cpp(9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\Advanced\Les1Opdracht2(GameOfLife)\Les1Opdracht2(GameOfLife)\Alive.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\School\Jaar2\KernModuleOOP\Advanced\Les1Opdracht2(GameOfLife)\Les1Opdracht2(GameOfLife)\Grid.cpp(36): warning C4715: 'Grid::getCellState': not all control paths return a value
   Les1Opdracht2(GameOfLife).vcxproj -> D:\School\Jaar2\KernModuleOOP\Advanced\Les1Opdracht2(GameOfLife)\Debug\Les1Opdracht2(GameOfLife).exe

@@ -16,13 +16,18 @@ void clearScreen(void);
 int main()
 {
 	bool gridOne[gridSize + 1][gridSize + 1] = {};
-	
 	int x, y;
 	char myToken = '.';
+
+	//only code in the main:
+	//Grid grid = Grid(regels);
+	//grid.draw();
+
+
 	vector<Cell> myCells = vector<Cell>();
 	Alive* aliveState = new Alive();
 	Dead* deadState = new Dead();
-	Cell cell0 = Cell(aliveState, 1,1);
+	Cell cell0 = Cell(aliveState, 1, 1);
 	Cell cell1 = Cell(aliveState, 1, 2);
 	Cell cell2 = Cell(aliveState, 1, 3);
 	Cell cell3 = Cell(aliveState, 1, 4);
@@ -44,7 +49,7 @@ int main()
 	myFirstGrid->drawGrid(myToken);
 	
 	//myFirstGrid->drawGrid(myToken);
-    /*
+	/*
 	Hier gaan we door de grid heen lopen en een * plaatsen.
 	We plaatsen random * op het begin en daarna lopen we door alle cellen in de grid heen 
 	en passen we de volgende regels toe:
@@ -59,7 +64,7 @@ int main()
 		cin >> x >> y;
 		gridOne[i][i] = true;
 		printGrid(gridOne);
-	}*/
+	}
 
 	std::ifstream input_file;
 	input_file.open("D:\\School\\Jaar2\\KernModuleOOP\\Advanced\\Les1Opdracht2(GameOfLife)\\Text.txt");
@@ -100,8 +105,8 @@ int main()
 			else
 				gridOne[_x][_y] = false;
 		}
-	}*/
-	/*
+	}
+	
 	printGrid(gridOne);
 
 		while (true)

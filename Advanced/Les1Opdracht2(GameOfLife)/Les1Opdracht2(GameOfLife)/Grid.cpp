@@ -6,6 +6,7 @@
 #include <fstream>
 #include <list>
 #include <algorithm>
+#include "Alive.h";
 
 Grid::Grid(int size, int DimRow, int DimCol, std::vector<Cell> Cells) : size(size), dimRow(DimRow), dimCol(DimCol), cells(Cells)
 {
@@ -17,11 +18,21 @@ Grid::~Grid()
 
 State* Grid::getCellState(int row, int col)
 {
-	vector<Cell>::iterator it = find_if(cells.begin(), cells.end(), [&](const Cell & s) { 
+	vector<Cell>::iterator it = find_if(cells.begin(), cells.end(), [&](const Cell & s) {
 		return s.Row == row && s.Col == col;
 		});
-	Cell cell = (*it);
-	return cell.state;
+	if (it != cells.end())
+	{
+		if (&it != nullptr)
+		{
+			Cell cell = (*it);
+			return cell.state;
+		}
+	}
+	else
+	{
+		return new Alive();
+	}
 }
 
 void Grid::setNeighBors()
